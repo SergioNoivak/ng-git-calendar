@@ -1,0 +1,31 @@
+
+<div class="corpo" (window:resize)="onResize($event)"  >
+
+  <div class="graph myContainer" >
+    <ul class="months">
+      <li>Jan</li>
+      <li>Fev</li>
+      <li>Mar</li>
+      <li>Abr</li>
+      <li>Mai</li>
+      <li>Jun</li>
+      <li>Jul</li>
+      <li>Aug</li>
+      <li>Set</li>
+      <li>Out</li>
+      <li>Nov</li>
+      <li>Dez</li>
+    </ul>
+
+    <ul  class="squares" id="squares">
+      <li data-placement="top"  *ngFor="let dia of dias"  [style.background-color]="getColor(dia)"></li>
+      <!-- <li style="background-color: chocolate;"></li> -->
+
+
+    </ul>
+  </div>
+
+
+
+  </div>
+
