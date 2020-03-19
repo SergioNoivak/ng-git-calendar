@@ -87,10 +87,32 @@ constructor(){}
 ````
 
 
+In this last example, relatively small data was entered, resulting in the following git-calendar:
 
+![alt](https://github.com/SergioNoivak/ng-git-calendar/blob/master/assets/f2.PNG)
+
+
+The section below builds a more complex example of a random git-calendar.
 ## More complex example: Github random commits
 
 In this example, the data attribute will be generated randomly and will produce a graph of commits
+````html
+<!-- app.component.html -->
+
+<p>
+    Git random colors
+</p>
+
+<lib-ng-git-calendar
+ year="2020"
+ colorLevel1="#c6e48b"
+ colorLevel2="#7bc96f"
+ colorLevel3="#196127"
+ [data]="data"
+    ></lib-ng-git-calendar>
+````
+
+To define attribute ``data``, just click on any component, in matrix format, each data row is a vector of specified data once selected level
 
 ````typescript
 import { Component } from '@angular/core';
