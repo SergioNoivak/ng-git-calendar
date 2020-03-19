@@ -1,5 +1,5 @@
 # NgGitCalendar
-
+![alt](https://github.com/SergioNoivak/ng-git-calendar/blob/master/assets/f1.PNG)
 ng-git-calendar is an angular interface component that implements a committing calendar similar to that of github, which can be used for various uses, such as fault logging and other records like any other calendar. 
 
 ## Getting Started
